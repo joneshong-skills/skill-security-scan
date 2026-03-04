@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+observations.md
+lessons.md
+.pytest_cache/
