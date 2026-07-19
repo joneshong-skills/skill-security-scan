@@ -44,7 +44,7 @@
 /skill-security-scan --path /path/to/skill-dir
 
 # 直接執行靜態掃描器
-python3 ~/.claude/skills/skill-security-scan/scripts/security-scan.py ~/.claude/skills/smart-search/
+~/.local/bin/python3 ~/.claude/skills/skill-security-scan/scripts/security-scan.py ~/.claude/skills/smart-search/
 ```
 
 ## 工作流程

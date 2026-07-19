@@ -1,10 +1,9 @@
 ---
 name: skill-security-scan
-description: >-
-  Perform comprehensive security scanning on Claude skill files, detecting 6 categories
-  of threats from prompt injection to cross-skill contamination.
+description: "scan, security, issues, check, prompt, injection, audit, 掃描 skill 安全, 檢查 skill 有無注入, skill 資安審查"
 version: 0.2.0
 tools: Read, Bash, Grep, Glob
+disable-model-invocation: true
 ---
 
 # Skill Security Scan — Deep Threat Analysis for Claude Skills
@@ -44,7 +43,7 @@ of threats from prompt injection to cross-skill contamination.
 Identical patterns to the gate hook, but runs on-demand with detailed reporting.
 
 ```bash
-python3 ~/.claude/skills/skill-security-scan/scripts/security-scan.py ~/.claude/skills/{skill-name}/
+~/.local/bin/python3 ~/.claude/skills/skill-security-scan/scripts/security-scan.py ~/.claude/skills/{skill-name}/
 ```
 
 ### Deep Scan (S1-S6) — Static + Semantic Analysis
@@ -138,7 +137,7 @@ Scan all files in skill directory. Flag unexpected file types:
 ### Step 3: Quick Scan (S1-S3)
 
 ```bash
-python3 ~/.claude/skills/skill-security-scan/scripts/security-scan.py {skill-dir}
+~/.local/bin/python3 ~/.claude/skills/skill-security-scan/scripts/security-scan.py {skill-dir}
 ```
 
 Returns JSON array of findings. Zero findings = clean.

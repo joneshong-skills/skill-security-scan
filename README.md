@@ -44,7 +44,7 @@
 /skill-security-scan --path /path/to/skill-dir
 
 # Run the static scanner directly
-python3 ~/.claude/skills/skill-security-scan/scripts/security-scan.py ~/.claude/skills/smart-search/
+~/.local/bin/python3 ~/.claude/skills/skill-security-scan/scripts/security-scan.py ~/.claude/skills/smart-search/
 ```
 
 ## Workflow
